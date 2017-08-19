@@ -15,7 +15,6 @@ int main()
    else
     cout << "The Sun";
 
-
-    return 0;
+   return 0;
 
 }

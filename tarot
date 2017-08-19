@@ -8,8 +8,6 @@ int main()
 
    draw = rand() % 3 + 1;
 
-   cout << draw;
-
    if (draw == 1)
     cout << "Tower";
    else if (draw == 2)

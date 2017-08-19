@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout << "Enter a word\n";
+
+    string word;
+
+    cin >> word;
+
+    int x;
+    x = 0;
+
+    do {
+
+    cout << word;
+
+    } while ( x == 0 );
+
+    return 0;
+}

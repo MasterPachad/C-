@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int draw;
+
+   draw = rand() % 3 + 1;
+
+   cout << draw;
+
+   if (draw == 1)
+    cout << "Tower";
+   else if (draw == 2)
+    cout << "The Devil";
+   else
+    cout << "The Sun";
+
+
+    return 0;
+
+}

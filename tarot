@@ -5,16 +5,43 @@ using namespace std;
 int main()
 {
    int draw;
+   int x;
+   int a;
+   int b;
+   int c;
 
+   x = 0;
+
+   do {
    draw = rand() % 3 + 1;
+   switch(draw) {
+   case(1): {
+       if (a != 1){
+       cout << "Tower\n";
 
-   if (draw == 1)
-    cout << "Tower";
-   else if (draw == 2)
-    cout << "The Devil";
-   else
-    cout << "The Sun";
+       x++;
+    }
+       a = 1;
+   }
+   case(2): {
+       if (b != 1){
+       cout << "The Devil\n";
 
+       x++;
+    }
+       b = 1;
+   }
+   case(3): {
+       if (c != 1) {
+       cout << "The Sun\n";
+
+       x++;
+    }
+       c = 1;
+   }
+   }
+   } while (x < 3);
+   
    return 0;
 
 }

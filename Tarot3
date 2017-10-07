@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+//char card[3][10] = { "Tower", "The Devil", "The Sun" } ;
+
+int main() 
+{
+    string *card = new string[3];
+    card[0] = "Tower";
+    card[1] = "The Devil";
+    card[2] = "The Sun";
+    
+    string *card0 = new string[3];
+    card0[0] = card[rand() % 3];
+    
+    do {
+    card0[1] = card[rand() % 3];
+    } while (card0[0] == card0[1]);
+    
+    do {
+    do {
+    card0[2] = card[rand() % 3];
+    } while (card0[1] == card0[2]);
+    } while (card0[0] == card0[2]);
+        
+    for( int a = 0; a < 3; a++) {
+    cout << card0[a] << '\n';
+    }
+   
+    return 0;
+}
